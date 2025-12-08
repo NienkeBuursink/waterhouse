@@ -10,7 +10,7 @@ const img3 = document.getElementById('kleur-img-3');
 
 const contentByColor = {
   groen: {
-    text: 'Waterhouse zijn schilderijen zijn bijna altijd afgebeeld in een open lucht, en dan vooral in een bos of bij de zee. We zien daarom vaak de groene kleuren terugkomen in de voor of achtergrond van zijn schilderijen. Deze kleur heb ik dan ook op de website als hoofd kleur gebruikt.',
+    text: "Waterhouse zijn schilderijen zijn bijna altijd afgebeeld in een open lucht. Hij schilderde dan ook 'en plein air', en dan vooral in een bos of bij de zee. We zien daarom vaak de groene kleuren terugkomen in de voor of achtergrond van zijn schilderijen. Deze kleur heb ik dan ook op de website als hoofd kleur gebruikt.",
     images: [
       'images/stijl/kleuren/groen/groen1.png',
       'images/stijl/kleuren/groen/groen2.png',
@@ -18,7 +18,7 @@ const contentByColor = {
     ]
   },
   blauw: {
-    text: 'De donkerblauwe kleur zie je veel terugkomen op de schilderijen waar Waterhouse een zee heeft geschildert, met bijvoorbeeld sirenes. Ook maakt hij zijn achtergronden een stuk donkerder, zodat de aandacht naar de voorgrond gaat. ',
+    text: 'De donkerblauwe kleur zie je veel terugkomen op de schilderijen waar Waterhouse iets van water heeft geschilderd, dit deed hij vaak voor composities en symbolisme. Ook maakt hij zijn achtergronden een stuk donkerder, zodat de aandacht naar de voorgrond gaat. ',
     images: [
       'images/stijl/kleuren/blauw/blauw1.png',
       'images/stijl/kleuren/blauw/blauw2.png',

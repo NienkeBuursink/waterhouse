@@ -179,7 +179,7 @@ section.analyse{
 
 ::-webkit-scrollbar {
     width: 0px;
-    background: transparent; /* make scrollbar transparent */
+    background: transparent;
 }
 
 .carousel-controls {
@@ -204,11 +204,6 @@ section.analyse{
 .carousel-btn:hover {
   background: var(--main-color-dark);
   color: white;
-}
-
-.carousel-btn:disabled {
-  opacity: 0.2;
-  cursor: unset;
 }
 
 #analyse-img {
