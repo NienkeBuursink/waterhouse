@@ -3,7 +3,7 @@ const prevBtn = document.querySelector('.carousel-btn.prev');
 const nextBtn = document.querySelector('.carousel-btn.next');
 
 prevBtn.addEventListener('click', () => {
-    if (inspiratieCarousel.scrollLeft <= 222) {
+    if (inspiratieCarousel.scrollLeft <= 500) {
         const maxScrollLeft = inspiratieCarousel.scrollWidth - inspiratieCarousel.clientWidth;
         inspiratieCarousel.scrollTo({ left: maxScrollLeft, behavior: 'smooth' });
     } else {

@@ -26,7 +26,6 @@ section:nth-of-type(2){
 section:nth-of-type(3){
     position: relative;
     display: grid;
-    justify-content: center;
     gap: 5em;
     & .inspiratie-carousel{
         display: flex;
@@ -35,11 +34,11 @@ section:nth-of-type(3){
         gap: 1000px;
         padding: 1em;
         scroll-snap-type: x mandatory;
-        padding-left: calc(50% - 250px);
-        padding-right: calc(50% - 250px);
+        padding-left: calc(50% - 500px);
+        padding-right: calc(50% - 500px);
     }
     & div.inspiratieblok{
-        flex: 0 0 1000px;
+        flex: 0 0 min(1000px, 100%);
         scroll-snap-align: center;
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -57,6 +56,7 @@ section:nth-of-type(3){
             width: 13em;
             height: 17em;
             object-fit: cover;
+            place-self: end;
         }
     }
 }
@@ -76,7 +76,6 @@ section:nth-of-type(3){
   cursor: pointer;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   z-index: 10;
   color: var(--main-color-light);
 }
@@ -87,9 +86,38 @@ section:nth-of-type(3){
 }
 
 .carousel-btn.prev {
-  left: 8em;
+  left: 5%;
 }
 
 .carousel-btn.next {
-  right: 8em;
+  right: 5%;
+}
+
+
+
+/* connectie waterhouse */
+section:nth-of-type(4){
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1.5fr 1fr;
+    & h2{
+        grid-column: span 2;
+    }
+    & p{
+        grid-column: 1;
+    }
+    & p:first-of-type{
+        align-self: end;
+    }
+    & .bijschrift{
+        grid-column: 2;
+        justify-self: center;
+    }
+    & img{
+        grid-column: 2;
+        grid-row: 2 / span 2;
+        align-self: end;
+        justify-self: center;
+        max-height: 50vh;
+    }
 }

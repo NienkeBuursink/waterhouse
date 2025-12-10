@@ -139,6 +139,7 @@ section.analyse{
     display: grid;
     grid-template-columns: 1fr 2fr;
     & h2{
+        margin-top: 1rem;
         justify-self: center;
         align-self: end;
     }
@@ -147,6 +148,9 @@ section.analyse{
         grid-row: 1 / span 3;
         background-image: url(../images/stijl/analyse/circe-origineel.png);
         background-size: contain;
+        background-position: center left;
+        background-repeat: no-repeat;
+        max-height: 90vh;
     }
 }
 
@@ -183,32 +187,34 @@ section.analyse{
 }
 
 .carousel-controls {
-  grid-column: 2;
-  display: flex;
-  gap: 1em;
-  justify-content: center;
-  margin-bottom: 1em;
+    grid-column: 2;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .carousel-btn {
-  width: 2.5em;
-  height: 2.5em;
-  border-radius: 50%;
-  background: var(--secondary-color);
-  border: none;
-  font-size: 1.5em;
-  cursor: pointer;
-  color: var(--main-color-light);
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: var(--main-color-light);
 }
 
 .carousel-btn:hover {
-  background: var(--main-color-dark);
-  color: white;
+    background: var(--main-color-dark);
+    color: white;
 }
 
 #analyse-img {
-  transition: opacity 0.5s ease-in-out;
-  opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    height: 100%;
+    object-fit: contain;
 }
 
 
