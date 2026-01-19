@@ -63,6 +63,10 @@ header {
 
 footer{
     & section{
+        background-image: url("../images/takje.png") !important;
+        background-position: left top 50px !important;
+        background-repeat: no-repeat;
+        background-size: 300px !important;
         padding: 6em 3.5em;
         & h2{
             font-size: 3em;
@@ -92,6 +96,19 @@ body{
 section:not(:first-of-type){
     border-bottom: solid var(--secondary-color);
     padding: 6em 8em;
+
+}
+
+section:nth-of-type(even){
+    background-image: url("../images/takje.png");
+    background-repeat: no-repeat;
+}
+
+section:nth-of-type(odd){
+    background-image: url("../images/zwaluw.png");
+    background-position: top 20px right 20px;
+    background-repeat: no-repeat;
+    background-size: 150px;
 }
 
 h1{
